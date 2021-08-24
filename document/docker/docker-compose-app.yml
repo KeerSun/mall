@@ -1,6 +1,8 @@
 version: '3'
 services:
   mall-admin:
+    labels:
+      shipyard.route: '/'
     image: mall/mall-admin:1.0-SNAPSHOT
     container_name: mall-admin
     ports:
